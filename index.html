@@ -1,0 +1,2192 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cosmed - Dr. Bibhash Pal | Homoeopathic Clinic in Garden Reach, Kolkata</title>
+    <meta
+      name="description"
+      content="Holistic Healing & Trusted Homeopathic Healthcare by Dr. Bibhash Pal in Garden Reach, Kolkata. Safe, gentle, and personalized remedies for chronic and acute conditions."
+    />
+    <meta property="og:title" content="The Cosmed - Dr. Bibhash Pal | Homeopathic Clinic" />
+    <meta
+      property="og:description"
+      content="Holistic Healing & Trusted Homeopathic Healthcare by Dr. Bibhash Pal (Homoeopathic Physician & Consultant) at Mudiali Bazar, Garden Reach, Kolkata."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thecosmed.in" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#f0f7f3',
+                100: '#dceee3',
+                200: '#bdddc9',
+                300: '#94c4a8',
+                400: '#67a683',
+                500: '#52b788', // mint accent
+                600: '#2d6a4f', // primary sage
+                700: '#1b4332', // deep pine
+                800: '#143326',
+                900: '#0d2219',
+              },
+              warm: {
+                50: '#faf8f5',
+                100: '#f5efe6',
+                200: '#eaddcc',
+                300: '#dbc5ab',
+                800: '#463b33',
+                900: '#29221d',
+              },
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+              serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Schema.org JSON-LD Structured Data for Local Medical Clinic -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "The Cosmed",
+        "description": "Holistic Healing & Trusted Homeopathic Healthcare by Dr. Bibhash Pal in Garden Reach, Kolkata.",
+        "url": "https://thecosmed.in",
+        "telephone": "+919674286002",
+        "medicalSpecialty": "Homeopathic",
+        "physician": {
+          "@type": "Physician",
+          "name": "Dr. Bibhash Pal",
+          "jobTitle": "Homoeopathic Physician & Consultant"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Q-364/A/2, MUDIALI BAZAR, near MUDIALI BAZAR, Dewan Bagan Tanti Para Basti",
+          "addressLocality": "Garden Reach, Kolkata",
+          "addressRegion": "West Bengal",
+          "postalCode": "700024",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "22.52077",
+          "longitude": "88.29177"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "35",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "13:00",
+            "closes": "15:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        ]
+      }
+    </script>
+
+    <style>
+      /* Smooth transitions & subtle custom styles */
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      .badge-pulse {
+        animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      @keyframes pulse-ring {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#f8fafc] text-slate-800 antialiased font-sans selection:bg-brand-500 selection:text-white pb-20 md:pb-0">
+
+    <!-- 1. TOP NOTICE BAR -->
+    <aside aria-label="Clinic announcement and quick contact" class="bg-brand-900 text-slate-200 text-xs border-b border-brand-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+        <!-- Chamber Live Status & Hours Summary -->
+        <div class="flex items-center gap-2 flex-wrap justify-center sm:justify-start">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-800 text-emerald-300 border border-brand-700/60" id="top-status-indicator">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 badge-pulse" id="top-status-dot"></span>
+            <span id="top-status-text">Checking Chamber Hours...</span>
+          </span>
+          <span class="hidden md:inline text-slate-400">·</span>
+          <a href="#reviews" class="inline-flex items-center gap-1 text-amber-300 hover:text-amber-200 font-semibold transition-colors">
+            <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400 inline"></i>
+            <span>4.8/5.0 (35+ Google Reviews)</span>
+          </a>
+          <span class="hidden lg:inline text-slate-400">·</span>
+          <span class="hidden lg:inline text-slate-300">
+            <i data-lucide="clock" class="w-3.5 h-3.5 inline mr-1 text-emerald-400"></i>
+            Mon–Fri: 1:00 PM – 3:30 PM | Sat–Sun: 24h Emergency
+          </span>
+        </div>
+
+        <!-- Direct Contact Links & Location Quick-tag -->
+        <div class="flex items-center gap-4 text-xs">
+          <a
+            href="https://maps.app.goo.gl/k1WAh9sfHhrSMPdR6"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-emerald-300 transition-colors inline-flex items-center gap-1 text-slate-300"
+          >
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-emerald-400"></i>
+            <span>Mudiali Bazar, Garden Reach</span>
+          </a>
+          <span class="text-slate-600 hidden sm:inline">|</span>
+          <a
+            href="tel:09674286002"
+            class="font-semibold text-emerald-300 hover:text-white transition-colors inline-flex items-center gap-1"
+          >
+            <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+            <span>+91 96742 86002</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 2. NAVIGATION HEADER -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs transition-all">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- Brand Logo & Title -->
+          <a href="#home" class="flex items-center gap-3 group text-left">
+            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 text-white flex items-center justify-center shadow-md shadow-brand-700/20 group-hover:scale-105 transition-transform">
+              <i data-lucide="cross" class="w-6 h-6 stroke-[2.2]"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xl font-bold tracking-tight text-brand-900 font-serif">The Cosmed</span>
+                <span class="text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded bg-brand-50 text-brand-700 border border-brand-200">Kolkata</span>
+              </div>
+              <p class="text-xs font-medium text-slate-600">
+                Dr. Bibhash Pal <span class="text-slate-400 font-normal">· Homoeopathic Physician</span>
+              </p>
+            </div>
+          </a>
+
+          <!-- Desktop Navigation Links -->
+          <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-600">
+            <a href="#home" class="hover:text-brand-600 transition-colors">Home</a>
+            <a href="#about" class="hover:text-brand-600 transition-colors">About Doctor</a>
+            <a href="#treatments" class="hover:text-brand-600 transition-colors">Treatments</a>
+            <a href="#timings" class="hover:text-brand-600 transition-colors">Timings</a>
+            <a href="#reviews" class="hover:text-brand-600 transition-colors flex items-center gap-1 text-slate-700 font-semibold">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <span>Reviews</span>
+              <span class="text-[11px] px-1.5 py-0.2 rounded bg-amber-100 text-amber-800 font-bold">4.8★</span>
+            </a>
+            <a href="#location" class="hover:text-brand-600 transition-colors">Clinic Location</a>
+            <a href="#faq" class="hover:text-brand-600 transition-colors">Patient FAQs</a>
+          </nav>
+
+          <!-- Desktop Header Actions -->
+          <div class="hidden sm:flex items-center gap-3">
+            <a
+              href="https://wa.me/919674286002"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 rounded-lg border border-emerald-200 transition-colors"
+            >
+              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+              <span>WhatsApp Chat</span>
+            </a>
+            <a
+              href="#book-appointment"
+              class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 active:bg-brand-800 rounded-lg shadow-sm hover:shadow transition-all"
+            >
+              <i data-lucide="calendar-check" class="w-4 h-4"></i>
+              <span>Book Appointment</span>
+            </a>
+          </div>
+
+          <!-- Mobile Hamburger Menu Button -->
+          <button
+            id="mobile-menu-toggle"
+            type="button"
+            class="lg:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500"
+            aria-label="Toggle menu"
+          >
+            <i data-lucide="menu" id="menu-icon-open" class="w-6 h-6"></i>
+            <i data-lucide="x" id="menu-icon-close" class="w-6 h-6 hidden"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Navigation Drawer -->
+      <div id="mobile-nav" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3 shadow-lg">
+        <div class="flex flex-col space-y-2 text-sm font-medium text-slate-700">
+          <a href="#home" class="mobile-nav-link px-3 py-2 rounded-md hover:bg-slate-50 hover:text-brand-700">Home</a>
+          <a href="#about" class="mobile-nav-link px-3 py-2 rounded-md hover:bg-slate-50 hover:text-brand-700">About Dr. Bibhash Pal</a>
+          <a href="#treatments" class="mobile-nav-link px-3 py-2 rounded-md hover:bg-slate-50 hover:text-brand-700">Conditions Treated</a>
+          <a href="#timings" class="mobile-nav-link px-3 py-2 rounded-md hover:bg-slate-50 hover:text-brand-700">Chamber Timings</a>
+          <a href="#reviews" class="mobile-nav-link px-3 py-2 rounded-md hover:bg-amber-50 hover:text-amber-800 font-semibold flex items-center justify-between">
+            <span>Patient Ratings & Google Reviews</span>
+            <span class="text-xs font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded">4.8 ★ (35+)</span>
+          </a>
+          <a href="#location" class="mobile-nav-link px-3 py-2 rounded-md hover:bg-slate-50 hover:text-brand-700">Clinic Location & Directions</a>
+          <a href="#faq" class="mobile-nav-link px-3 py-2 rounded-md hover:bg-slate-50 hover:text-brand-700">Patient FAQs</a>
+        </div>
+        <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+          <a
+            href="tel:09674286002"
+            class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold text-slate-800 bg-slate-100 hover:bg-slate-200 rounded-lg"
+          >
+            <i data-lucide="phone" class="w-4 h-4 text-brand-600"></i>
+            <span>Call Chamber: +91 96742 86002</span>
+          </a>
+          <a
+            href="#book-appointment"
+            class="mobile-nav-link w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 rounded-lg shadow-sm"
+          >
+            <i data-lucide="calendar" class="w-4 h-4"></i>
+            <span>Book Visit Online</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 3. HERO SECTION -->
+    <section id="home" class="relative overflow-hidden bg-gradient-to-b from-brand-50/60 via-warm-50/40 to-slate-50 pt-12 pb-16 lg:pt-20 lg:pb-24 border-b border-slate-200/60">
+      <!-- Subtle Decorative Background Glows -->
+      <div class="absolute -top-32 -left-32 w-96 h-96 bg-brand-200/30 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute top-20 right-0 w-80 h-80 bg-emerald-200/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Hero Text Content (Left 7 Cols) -->
+          <div class="lg:col-span-7 space-y-6 text-left">
+            <!-- Chamber Live Status Pill -->
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-white border border-slate-200 shadow-xs text-slate-700">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 badge-pulse" id="hero-status-dot"></span>
+              <span id="hero-status-text">Garden Reach Chamber · Open Today</span>
+              <span class="text-slate-300">|</span>
+              <span class="text-brand-700 font-medium">Mudiali Bazar</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-[1.2] font-serif">
+              Gentle, Effective & Individualized Homeopathic Care in <span class="text-brand-700 underline decoration-brand-300 decoration-wavy underline-offset-6">Garden Reach</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+              Experience the restorative power of natural healing with <strong class="text-slate-800 font-semibold">Dr. Bibhash Pal</strong>. Providing personalized remedy formulations, root-cause disease management, and side-effect-free homeopathic remedies for patients of all ages.
+            </p>
+
+            <!-- Trust Highlights Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs text-slate-700 font-medium">
+              <div class="flex items-center gap-2 bg-white/80 backdrop-blur-xs p-2.5 rounded-lg border border-slate-200/80">
+                <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Zero Harmful Side-Effects</span>
+              </div>
+              <div class="flex items-center gap-2 bg-white/80 backdrop-blur-xs p-2.5 rounded-lg border border-slate-200/80">
+                <i data-lucide="sparkles" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Root-Cause Healing</span>
+              </div>
+              <div class="flex items-center gap-2 bg-white/80 backdrop-blur-xs p-2.5 rounded-lg border border-slate-200/80 col-span-2 sm:col-span-1">
+                <i data-lucide="clock-4" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Sat–Sun 24h Emergency</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-4">
+              <a
+                href="tel:09674286002"
+                class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-semibold text-white bg-brand-600 hover:bg-brand-700 active:bg-brand-800 rounded-xl shadow-md hover:shadow-lg transition-all"
+              >
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+                <span>Call Chamber (+91 96742 86002)</span>
+              </a>
+
+              <a
+                href="https://wa.me/919674286002?text=Hello%20Dr.%20Bibhash%20Pal,%20I%20would%20like%20to%20inquire%20about%20a%20consultation%20at%20The%20Cosmed."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-semibold text-emerald-800 bg-white hover:bg-emerald-50 border border-emerald-300 rounded-xl shadow-xs hover:border-emerald-400 transition-all"
+              >
+                <i data-lucide="message-square" class="w-5 h-5 text-emerald-600"></i>
+                <span>Book Visit via WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Location micro-link -->
+            <div class="text-xs text-slate-500 flex items-center gap-2 pt-1">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+              <span>Chamber located at Q-364/A/2, Mudiali Bazar, Garden Reach, Kolkata 700024</span>
+              <a href="#location" class="text-brand-600 hover:underline font-medium">View Map</a>
+            </div>
+          </div>
+
+          <!-- Hero Quick Consultation Card (Right 5 Cols) -->
+          <div class="lg:col-span-5">
+            <div class="bg-white rounded-2xl p-6 sm:p-7 shadow-xl shadow-slate-200/60 border border-slate-200/90 relative">
+              <div class="flex items-start justify-between pb-4 border-b border-slate-100">
+                <div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-brand-600">Doctor on Duty</span>
+                  <h3 class="text-xl font-bold text-slate-900 mt-0.5">Dr. Bibhash Pal</h3>
+                  <p class="text-xs text-slate-500 font-medium">Homoeopathic Physician & Consultant</p>
+                </div>
+                <div class="w-12 h-12 rounded-xl bg-brand-50 border border-brand-100 flex items-center justify-center text-brand-700">
+                  <i data-lucide="stethoscope" class="w-6 h-6"></i>
+                </div>
+              </div>
+
+              <!-- Quick Schedule Overview -->
+              <div class="py-4 space-y-3">
+                <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-100">
+                  <div class="flex items-center justify-between text-xs font-semibold text-slate-700 mb-1">
+                    <span>Weekday Consultation</span>
+                    <span class="text-brand-700 bg-brand-100/60 px-2 py-0.5 rounded text-[11px]">Mon – Fri</span>
+                  </div>
+                  <div class="text-sm font-bold text-slate-900 flex items-center gap-2">
+                    <i data-lucide="clock" class="w-4 h-4 text-emerald-600"></i>
+                    <span>1:00 PM – 3:30 PM (Afternoon Chamber)</span>
+                  </div>
+                </div>
+
+                <div class="bg-emerald-50/50 rounded-xl p-3.5 border border-emerald-100/80">
+                  <div class="flex items-center justify-between text-xs font-semibold text-emerald-900 mb-1">
+                    <span>Weekend Service</span>
+                    <span class="text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded text-[11px] font-bold">Sat & Sun</span>
+                  </div>
+                  <div class="text-sm font-bold text-emerald-800 flex items-center gap-2">
+                    <i data-lucide="activity" class="w-4 h-4 text-emerald-600"></i>
+                    <span>Open 24 Hours (Emergency / Extended)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Instant Consultation CTA -->
+              <div class="pt-2 space-y-2.5">
+                <a
+                  href="#book-appointment"
+                  class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 text-sm font-bold text-white bg-brand-600 hover:bg-brand-700 rounded-xl transition-colors"
+                >
+                  <i data-lucide="calendar" class="w-4 h-4"></i>
+                  <span>Schedule Chamber Visit Now</span>
+                </a>
+                <p class="text-[11px] text-center text-slate-500">
+                  Walk-ins welcome during chamber hours. Prior appointment recommended for thorough case study.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ABOUT DR. BIBHASH PAL -->
+    <section id="about" class="py-16 sm:py-20 bg-white border-b border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Doctor Portrait & Visual Card (Left 5 Cols) -->
+          <div class="lg:col-span-5 order-2 lg:order-1">
+            <div class="relative mx-auto max-w-md">
+              <div class="absolute -inset-2 bg-gradient-to-tr from-brand-600 to-emerald-400 rounded-3xl opacity-25 blur-xl"></div>
+              <div class="relative bg-white rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+                <!-- Doctor Image Container -->
+                <div class="relative w-full aspect-[4/5] bg-slate-100 overflow-hidden group">
+                  <img
+                    src="https://lh3.googleusercontent.com/grass-cs/AABkmLcjV-pwjvwaRC983yF_ZnoCtevXgGSlFaKK06kdSCS9tla2yWEcL0BfBeN6tgWUFyA5BQ8VQAk7GuZZbdvyuv9gkRup4pfMDlejmCHXqDxAYVYsrOyOjKV9hGh-ZAxyYZvxWmOWbf_6HR_M=w800-h1000-k-no"
+                    alt="Dr. Bibhash Pal - Homoeopathic Physician & Consultant"
+                    class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent"></div>
+
+                  <!-- Verified Google Badge Overlay -->
+                  <div class="absolute top-4 left-4">
+                    <a
+                      href="https://maps.app.goo.gl/k1WAh9sfHhrSMPdR6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white/95 text-slate-800 shadow-md backdrop-blur-md hover:bg-white transition-all"
+                    >
+                      <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                      <span class="font-bold">4.8 Rating</span>
+                      <span class="text-slate-400">·</span>
+                      <span class="text-emerald-700 font-medium">35+ Google Reviews</span>
+                    </a>
+                  </div>
+
+                  <!-- Overlay Text at bottom of photo -->
+                  <div class="absolute bottom-4 left-4 right-4 text-white">
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-300">Consultant Physician</span>
+                    <h3 class="text-2xl font-bold font-serif text-white leading-tight">Dr. Bibhash Pal</h3>
+                    <p class="text-xs text-slate-200 font-medium">Homoeopathic Physician & Consultant</p>
+                  </div>
+                </div>
+
+                <!-- Card Details below photo -->
+                <div class="p-6 space-y-4 bg-slate-900 text-slate-200">
+                  <div class="space-y-3 text-xs">
+                    <div class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                      <div>
+                        <strong class="text-white block font-semibold text-xs">Classical & Scientific Homeopathy</strong>
+                        <span class="text-slate-400">Targeting the underlying root cause with individualized natural micro-doses.</span>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                      <div>
+                        <strong class="text-white block font-semibold text-xs">Deep Constitutional Case Intake</strong>
+                        <span class="text-slate-400">Dedicated 25–30 minute evaluations for chronic and recurring ailments.</span>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                      <div>
+                        <strong class="text-white block font-semibold text-xs">Safe for All Ages</strong>
+                        <span class="text-slate-400">Zero chemical side-effects; gentle for infants, pregnant mothers, & elders.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs">
+                    <div class="flex items-center gap-1.5 text-slate-400">
+                      <i data-lucide="map-pin" class="w-3.5 h-3.5 text-emerald-400"></i>
+                      <span>The Cosmed · Mudiali Bazar</span>
+                    </div>
+                    <a
+                      href="https://maps.app.goo.gl/k1WAh9sfHhrSMPdR6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-emerald-400 hover:text-emerald-300 font-semibold inline-flex items-center gap-1"
+                    >
+                      <span>Google Profile</span>
+                      <i data-lucide="external-link" class="w-3 h-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor Narrative & Philosophy (Right 7 Cols) -->
+          <div class="lg:col-span-7 space-y-6 order-1 lg:order-2 text-left">
+            <div class="space-y-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Practitioner & Clinical Philosophy</span>
+              <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 font-serif">
+                A Holistic, Patient-First Approach to Long-Term Wellness
+              </h2>
+            </div>
+
+            <p class="text-slate-600 text-base leading-relaxed">
+              At <strong class="text-slate-800">The Cosmed</strong>, Dr. Bibhash Pal brings seasoned clinical expertise in treating complex chronic disorders and recurring acute ailments through individualized homoeopathy.
+            </p>
+
+            <p class="text-slate-600 text-base leading-relaxed">
+              Every individual possesses a unique biological constitution. Rather than prescribing blanket medications for isolated symptoms, Dr. Pal conducts in-depth case evaluations examining past medical history, lifestyle triggers, mental stress levels, and genetic susceptibilities. This comprehensive method triggers the body’s innate vital force to heal organically.
+            </p>
+
+            <!-- 3 Core Pillars -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center mb-3">
+                  <i data-lucide="feather" class="w-4 h-4"></i>
+                </div>
+                <h4 class="font-bold text-slate-900 text-sm mb-1">Non-Invasive</h4>
+                <p class="text-xs text-slate-600 leading-normal">
+                  Gentle remedies suitable for infants, pregnant women, and elderly individuals.
+                </p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center mb-3">
+                  <i data-lucide="target" class="w-4 h-4"></i>
+                </div>
+                <h4 class="font-bold text-slate-900 text-sm mb-1">Root-Cause Focus</h4>
+                <p class="text-xs text-slate-600 leading-normal">
+                  Eliminating recurrent relapses by rectifying inner metabolic & immune imbalances.
+                </p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center mb-3">
+                  <i data-lucide="heart-pulse" class="w-4 h-4"></i>
+                </div>
+                <h4 class="font-bold text-slate-900 text-sm mb-1">Chronic Care</h4>
+                <p class="text-xs text-slate-600 leading-normal">
+                  Specialized protocol for skin, joint, respiratory, and digestive conditions.
+                </p>
+              </div>
+            </div>
+
+            <!-- Quote Card -->
+            <blockquote class="p-4 bg-brand-50/70 border-l-4 border-brand-600 rounded-r-xl text-sm italic text-slate-700">
+              "True recovery does not come from silencing a symptom with heavy chemicals. It comes when the body’s natural harmony is restored, allowing the patient to experience lasting vitality."
+              <footer class="mt-2 text-xs font-semibold not-italic text-brand-800">
+                — Dr. Bibhash Pal (Homoeopathic Physician & Consultant)
+              </footer>
+            </blockquote>
+
+            <div class="pt-2 flex flex-wrap gap-4 items-center">
+              <a
+                href="#book-appointment"
+                class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 rounded-lg transition-colors"
+              >
+                <span>Consult with Dr. Pal</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+              <a
+                href="tel:09674286002"
+                class="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand-700 transition-colors"
+              >
+                <i data-lucide="phone" class="w-4 h-4 text-emerald-600"></i>
+                <span>Direct Inquiry: +91 96742 86002</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CONDITIONS TREATED & SPECIALTIES -->
+    <section id="treatments" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12 sm:mb-16">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Clinical Expertise & Specializations</span>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 font-serif">
+            Comprehensive Natural Healthcare Solutions
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            Dr. Bibhash Pal specializes in evidence-informed homoeopathic management for a wide spectrum of acute and chronic health conditions.
+          </p>
+        </div>
+
+        <!-- 6 Specialty Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+
+          <!-- Card 1: Skin & Hair -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center group-hover:scale-105 transition-transform">
+                <i data-lucide="sparkle" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Chronic Skin & Hair Conditions</h3>
+                <p class="text-xs text-slate-500 font-medium mt-0.5">Eczema, Psoriasis, Acne, Hair Fall</p>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Targeting deep constitutional toxins and autoimmune triggers to heal resistant skin eruptions, scalp dermatitis, severe acne, and alopecia without steroid creams.
+              </p>
+              <div class="text-xs space-y-1.5 text-slate-700 pt-1">
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Psoriasis & Atopic Eczema</div>
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Hormonal & Cystic Acne</div>
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Chronic Urticaria & Dandruff</div>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <button
+                type="button"
+                onclick="selectTreatment('Skin & Hair Conditions (Eczema, Psoriasis, Acne, Hair Fall)')"
+                class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold text-brand-700 bg-brand-50 hover:bg-brand-600 hover:text-white rounded-lg transition-colors cursor-pointer"
+              >
+                <span>Inquire for this Treatment</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: Respiratory & Allergies -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center group-hover:scale-105 transition-transform">
+                <i data-lucide="wind" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Respiratory & Allergic Disorders</h3>
+                <p class="text-xs text-slate-500 font-medium mt-0.5">Asthma, Bronchitis, Sinusitis, Dust Allergies</p>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Strengthening respiratory mucosal defenses and dampening allergic hypersensitivity naturally, reducing inhaler reliance and recurrent seasonal flare-ups.
+              </p>
+              <div class="text-xs space-y-1.5 text-slate-700 pt-1">
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Bronchial Asthma & Wheezing</div>
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Chronic Frontal/Maxillary Sinusitis</div>
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Dust, Pollen & Weather Rhinitis</div>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <button
+                type="button"
+                onclick="selectTreatment('Respiratory & Allergic Disorders (Asthma, Sinusitis, Bronchitis)')"
+                class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold text-brand-700 bg-brand-50 hover:bg-brand-600 hover:text-white rounded-lg transition-colors cursor-pointer"
+              >
+                <span>Inquire for this Treatment</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: Digestive & Gastrointestinal -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center group-hover:scale-105 transition-transform">
+                <i data-lucide="utensils" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Digestive & Gastrointestinal Issues</h3>
+                <p class="text-xs text-slate-500 font-medium mt-0.5">Acidity, IBS, Constipation, Liver sluggishness</p>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Restoring gut microbiome balance, regulating gastric acid secretions, and treating sluggish digestion, fatty liver discomfort, and colon hyper-reactivity.
+              </p>
+              <div class="text-xs space-y-1.5 text-slate-700 pt-1">
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Chronic Hyperacidity & GERD</div>
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Irritable Bowel Syndrome (IBS)</div>
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Piles, Fissures & Chronic Constipation</div>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <button
+                type="button"
+                onclick="selectTreatment('Digestive & Gastrointestinal Issues (Acidity, IBS, Liver)')"
+                class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold text-brand-700 bg-brand-50 hover:bg-brand-600 hover:text-white rounded-lg transition-colors cursor-pointer"
+              >
+                <span>Inquire for this Treatment</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4: Joint & Musculoskeletal -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center group-hover:scale-105 transition-transform">
+                <i data-lucide="bone" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Joint & Musculoskeletal Pain</h3>
+                <p class="text-xs text-slate-500 font-medium mt-0.5">Arthritis, Sciatica, Gout, Spondylitis</p>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Relieving chronic joint stiffness, reducing synovial inflammation, and slowing down cartilage degeneration without harsh NSAIDs or stomach ulcer risks.
+              </p>
+              <div class="text-xs space-y-1.5 text-slate-700 pt-1">
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Osteoarthritis & Rheumatoid Arthritis</div>
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Cervical & Lumbar Spondylitis</div>
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Sciatica Nerve Compression & Gout</div>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <button
+                type="button"
+                onclick="selectTreatment('Joint & Musculoskeletal Pain (Arthritis, Sciatica, Spondylitis)')"
+                class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold text-brand-700 bg-brand-50 hover:bg-brand-600 hover:text-white rounded-lg transition-colors cursor-pointer"
+              >
+                <span>Inquire for this Treatment</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5: Lifestyle & Stress-Related -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center group-hover:scale-105 transition-transform">
+                <i data-lucide="moon" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Lifestyle & Stress-Related Disorders</h3>
+                <p class="text-xs text-slate-500 font-medium mt-0.5">Insomnia, Migraine, Anxiety, Fatigue</p>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Balancing neuro-endocrine equilibrium, restoring restorative sleep cycles, and curbing persistent headaches or mental strain without chemical sedatives.
+              </p>
+              <div class="text-xs space-y-1.5 text-slate-700 pt-1">
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Chronic Migraines & Tension Headaches</div>
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Insomnia & Disrupted Sleep</div>
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Chronic Burnout & Generalized Anxiety</div>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <button
+                type="button"
+                onclick="selectTreatment('Lifestyle & Stress Disorders (Insomnia, Migraine, Anxiety)')"
+                class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold text-brand-700 bg-brand-50 hover:bg-brand-600 hover:text-white rounded-lg transition-colors cursor-pointer"
+              >
+                <span>Inquire for this Treatment</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 6: Pediatric & Geriatric -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center group-hover:scale-105 transition-transform">
+                <i data-lucide="baby" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Pediatric & Geriatric Natural Care</h3>
+                <p class="text-xs text-slate-500 font-medium mt-0.5">Colic, Immunity Building, Degenerative Care</p>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Sweet, pleasant-to-consume pillules loved by children for recurring colds and teething, alongside gentle geriatric support for elderly comfort and vitality.
+              </p>
+              <div class="text-xs space-y-1.5 text-slate-700 pt-1">
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Infant Colic & Teething Distress</div>
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Weak Pediatric Immunity & Appetite</div>
+                <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Age-Related Mobility & Vitality Support</div>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <button
+                type="button"
+                onclick="selectTreatment('Pediatric & Geriatric Care (Child Immunity, Senior Care)')"
+                class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold text-brand-700 bg-brand-50 hover:bg-brand-600 hover:text-white rounded-lg transition-colors cursor-pointer"
+              >
+                <span>Inquire for this Treatment</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CHAMBER TIMINGS & VISIT SCHEDULE -->
+    <section id="timings" class="py-16 sm:py-20 bg-white border-b border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+          <!-- Timings Header -->
+          <div class="text-center space-y-3 mb-10">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Consultation Chamber Schedule</span>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 font-serif">
+              Chamber Timings & Weekly Hours
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base">
+              Convenient weekday afternoon slots with 24-hour emergency support on weekends at Garden Reach, Kolkata.
+            </p>
+          </div>
+
+          <!-- Dynamic Live Status Banner -->
+          <div class="mb-8 p-4 rounded-2xl bg-gradient-to-r from-brand-50 via-emerald-50 to-brand-50 border border-brand-200/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3 text-left">
+              <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center shrink-0">
+                <i data-lucide="calendar-clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm font-bold text-slate-900" id="schedule-day-title">Today's Schedule</span>
+                  <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800" id="schedule-status-pill">
+                    Checking...
+                  </span>
+                </div>
+                <p class="text-xs text-slate-600 mt-0.5" id="schedule-detail-text">
+                  Fetching current chamber hours for Kolkata...
+                </p>
+              </div>
+            </div>
+            <a
+              href="tel:09674286002"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-brand-600 hover:bg-brand-700 rounded-lg shrink-0 transition-colors"
+            >
+              <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+              <span>Confirm Slot: +91 96742 86002</span>
+            </a>
+          </div>
+
+          <!-- Comprehensive Timetable Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Weekdays Card -->
+            <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+              <div class="flex items-center justify-between pb-4 border-b border-slate-200 mb-4">
+                <div class="flex items-center gap-2">
+                  <div class="w-8 h-8 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center">
+                    <i data-lucide="sun" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-slate-900 text-base">Regular Weekdays</h3>
+                    <p class="text-xs text-slate-500 font-medium">Monday through Friday</p>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-brand-700 bg-brand-100/80 px-2.5 py-1 rounded-md">
+                  1:00 PM – 3:30 PM
+                </span>
+              </div>
+
+              <!-- Day-by-Day List -->
+              <ul class="space-y-2.5 text-xs">
+                <li class="flex items-center justify-between py-1.5 px-3 rounded-lg bg-white border border-slate-100" id="row-mon">
+                  <span class="font-semibold text-slate-700">Monday</span>
+                  <span class="text-slate-600 font-medium">1:00 PM – 3:30 PM</span>
+                </li>
+                <li class="flex items-center justify-between py-1.5 px-3 rounded-lg bg-white border border-slate-100" id="row-tue">
+                  <span class="font-semibold text-slate-700">Tuesday</span>
+                  <span class="text-slate-600 font-medium">1:00 PM – 3:30 PM</span>
+                </li>
+                <li class="flex items-center justify-between py-1.5 px-3 rounded-lg bg-white border border-slate-100" id="row-wed">
+                  <span class="font-semibold text-slate-700">Wednesday</span>
+                  <span class="text-slate-600 font-medium">1:00 PM – 3:30 PM</span>
+                </li>
+                <li class="flex items-center justify-between py-1.5 px-3 rounded-lg bg-white border border-slate-100" id="row-thu">
+                  <span class="font-semibold text-slate-700">Thursday</span>
+                  <span class="text-slate-600 font-medium">1:00 PM – 3:30 PM</span>
+                </li>
+                <li class="flex items-center justify-between py-1.5 px-3 rounded-lg bg-white border border-slate-100" id="row-fri">
+                  <span class="font-semibold text-slate-700">Friday</span>
+                  <span class="text-slate-600 font-medium">1:00 PM – 3:30 PM</span>
+                </li>
+              </ul>
+              <p class="text-[11px] text-slate-500 mt-3 italic">
+                *Tokens distributed on arrival. First-time consultations require ~25-30 mins for detailed case intake.
+              </p>
+            </div>
+
+            <!-- Weekends Card -->
+            <div class="bg-emerald-50/50 rounded-2xl p-6 border border-emerald-200/80 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between pb-4 border-b border-emerald-200/80 mb-4">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center">
+                      <i data-lucide="shield-alert" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-slate-900 text-base">Weekends & Emergencies</h3>
+                      <p class="text-xs text-emerald-800 font-medium">Saturday & Sunday</p>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-white bg-emerald-600 px-2.5 py-1 rounded-md shadow-xs">
+                    Open 24 Hours
+                  </span>
+                </div>
+
+                <!-- Weekend Days -->
+                <ul class="space-y-2.5 text-xs">
+                  <li class="flex items-center justify-between py-2 px-3 rounded-lg bg-white border border-emerald-100 shadow-xs" id="row-sat">
+                    <div>
+                      <span class="font-bold text-slate-900 block">Saturday</span>
+                      <span class="text-[11px] text-emerald-700">Extended / Emergency Service</span>
+                    </div>
+                    <span class="font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Open 24 Hours</span>
+                  </li>
+                  <li class="flex items-center justify-between py-2 px-3 rounded-lg bg-white border border-emerald-100 shadow-xs" id="row-sun">
+                    <div>
+                      <span class="font-bold text-slate-900 block">Sunday</span>
+                      <span class="text-[11px] text-emerald-700">Extended / Emergency Service</span>
+                    </div>
+                    <span class="font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Open 24 Hours</span>
+                  </li>
+                </ul>
+
+                <div class="mt-4 p-3 bg-white/80 rounded-xl border border-emerald-100 text-xs text-slate-700 space-y-1">
+                  <div class="font-semibold text-emerald-900 flex items-center gap-1.5">
+                    <i data-lucide="info" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>Emergency Weekend Assistance</span>
+                  </div>
+                  <p class="text-[11px] text-slate-600 leading-normal">
+                    For acute flare-ups, sudden fever, or urgent consultations on Saturdays and Sundays, call Dr. Bibhash Pal directly at <strong>+91 96742 86002</strong> prior to arrival.
+                  </p>
+                </div>
+              </div>
+
+              <div class="pt-4 mt-4 border-t border-emerald-200/60">
+                <a
+                  href="tel:09674286002"
+                  class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 text-xs font-bold text-emerald-900 bg-emerald-100 hover:bg-emerald-200 rounded-lg transition-colors"
+                >
+                  <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+                  <span>Call Emergency Helpline (+91 96742 86002)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PATIENT RATINGS & GOOGLE REVIEWS SECTION -->
+    <section id="reviews" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Title -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-10 sm:mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Verified Patient Testimonials</span>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 font-serif">
+            Rated 4.8 Stars on Google Maps
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            Read real feedback from patients who found gentle, long-lasting healing at The Cosmed under Dr. Bibhash Pal.
+          </p>
+        </div>
+
+        <!-- Google Scoreboard / Summary Header Card -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-sm mb-10">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Big Score Column (4 Cols) -->
+            <div class="lg:col-span-4 flex flex-col items-center sm:items-start text-center sm:text-left border-b lg:border-b-0 lg:border-r border-slate-200 pb-6 lg:pb-0 lg:pr-8">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-5xl font-extrabold text-slate-900 tracking-tight">4.8</span>
+                <div>
+                  <div class="flex text-amber-400 gap-1 text-lg">
+                    <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                    <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                    <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                    <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                    <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-500">Out of 5.0 Stars</span>
+                </div>
+              </div>
+              <div class="inline-flex items-center gap-1.5 text-xs text-slate-600 font-medium mt-1">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>Based on <strong>35+ Verified Patient Reviews</strong></span>
+              </div>
+              <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                Aggregated from official Google Maps listings for Dr. Bibhash Pal's clinic in Garden Reach, Kolkata.
+              </p>
+            </div>
+
+            <!-- Key Patient Highlights (4 Cols) -->
+            <div class="lg:col-span-4 space-y-2.5 text-xs text-slate-700 py-2 border-b lg:border-b-0 lg:border-r border-slate-200 pb-6 lg:pb-0 lg:pr-8">
+              <div class="flex items-center justify-between">
+                <span class="font-medium text-slate-600">Polite & Attentive Case Taking</span>
+                <span class="font-bold text-emerald-700">100%</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2">
+                <div class="bg-emerald-600 h-2 rounded-full w-full"></div>
+              </div>
+
+              <div class="flex items-center justify-between pt-1">
+                <span class="font-medium text-slate-600">Treatment Efficacy & Symptom Relief</span>
+                <span class="font-bold text-emerald-700">96%</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2">
+                <div class="bg-emerald-600 h-2 rounded-full w-[96%]"></div>
+              </div>
+
+              <div class="flex items-center justify-between pt-1">
+                <span class="font-medium text-slate-600">Zero Side-Effects & Patient Safety</span>
+                <span class="font-bold text-emerald-700">98%</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2">
+                <div class="bg-emerald-600 h-2 rounded-full w-[98%]"></div>
+              </div>
+            </div>
+
+            <!-- Google Actions (4 Cols) -->
+            <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
+              <a
+                href="https://maps.app.goo.gl/k1WAh9sfHhrSMPdR6"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 px-5 py-3 text-xs font-bold text-white bg-slate-900 hover:bg-slate-800 rounded-xl transition-colors shadow-xs"
+              >
+                <i data-lucide="map-pin" class="w-4 h-4 text-emerald-400"></i>
+                <span>Read All Reviews on Google Maps</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5 text-slate-400"></i>
+              </a>
+
+              <a
+                href="https://maps.app.goo.gl/k1WAh9sfHhrSMPdR6"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition-colors"
+              >
+                <i data-lucide="edit-3" class="w-3.5 h-3.5 text-slate-500"></i>
+                <span>Write a Patient Review</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Segmented Tabs -->
+        <div class="flex items-center justify-center gap-2 flex-wrap mb-8 text-xs font-medium">
+          <button
+            type="button"
+            onclick="filterReviews('all', this)"
+            class="review-filter-btn px-4 py-2 rounded-lg bg-brand-600 text-white font-semibold transition-colors cursor-pointer"
+          >
+            All Reviews (35+)
+          </button>
+          <button
+            type="button"
+            onclick="filterReviews('skin', this)"
+            class="review-filter-btn px-4 py-2 rounded-lg bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-colors cursor-pointer"
+          >
+            Skin & Allergies
+          </button>
+          <button
+            type="button"
+            onclick="filterReviews('digestive', this)"
+            class="review-filter-btn px-4 py-2 rounded-lg bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-colors cursor-pointer"
+          >
+            Digestive & Acidity
+          </button>
+          <button
+            type="button"
+            onclick="filterReviews('pediatric', this)"
+            class="review-filter-btn px-4 py-2 rounded-lg bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-colors cursor-pointer"
+          >
+            Pediatric & Children
+          </button>
+          <button
+            type="button"
+            onclick="filterReviews('pain', this)"
+            class="review-filter-btn px-4 py-2 rounded-lg bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-colors cursor-pointer"
+          >
+            Joint & Nerve Pain
+          </button>
+        </div>
+
+        <!-- Review Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="reviews-grid">
+
+          <!-- Review 1: Skin & Allergy -->
+          <div class="review-card bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm flex flex-col justify-between" data-category="skin">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center text-sm">
+                    SM
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900 text-sm">S. Mukherjee</h4>
+                    <p class="text-[11px] text-slate-400">Local Patient · Garden Reach</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1 text-[11px] text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-semibold border border-emerald-100">
+                  <i data-lucide="check" class="w-3 h-3"></i> Verified
+                </span>
+              </div>
+
+              <div class="flex items-center gap-1 text-amber-400 text-xs">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <span class="text-slate-400 text-[11px] ml-1.5 font-medium">3 weeks ago</span>
+              </div>
+
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                "Dr. Bibhash Pal is an extremely polite and humble physician. He listened to all my health difficulties with utmost patience and prescribed homeopathic medicines that cured my long-standing skin allergic rashes within just three weeks without any side effects. Best homeopathic doctor in Garden Reach."
+              </p>
+            </div>
+
+            <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+              <span class="font-medium text-brand-700">Treated: Chronic Skin Allergy</span>
+              <span class="text-slate-400">Google Review</span>
+            </div>
+          </div>
+
+          <!-- Review 2: Digestive & Acidity -->
+          <div class="review-card bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm flex flex-col justify-between" data-category="digestive">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-800 font-bold flex items-center justify-center text-sm">
+                    MI
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900 text-sm">Md. Imran</h4>
+                    <p class="text-[11px] text-slate-400">Resident · Mudiali Bazar</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1 text-[11px] text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-semibold border border-emerald-100">
+                  <i data-lucide="check" class="w-3 h-3"></i> Verified
+                </span>
+              </div>
+
+              <div class="flex items-center gap-1 text-amber-400 text-xs">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <span class="text-slate-400 text-[11px] ml-1.5 font-medium">1 month ago</span>
+              </div>
+
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                "Very gentle and attentive doctor near Mudiali Bazar. Unlike other clinics where doctors rush you out in two minutes, Dr. Pal spent nearly 25 minutes taking my complete history for chronic acidity and severe indigestion. Feeling 100% better now after his gentle remedies."
+              </p>
+            </div>
+
+            <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+              <span class="font-medium text-brand-700">Treated: Severe Hyperacidity & GERD</span>
+              <span class="text-slate-400">Google Review</span>
+            </div>
+          </div>
+
+          <!-- Review 3: Pediatric & Children -->
+          <div class="review-card bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm flex flex-col justify-between" data-category="pediatric">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-rose-100 text-rose-800 font-bold flex items-center justify-center text-sm">
+                    RC
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900 text-sm">R. Chatterjee</h4>
+                    <p class="text-[11px] text-slate-400">Parent · Kolkata</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1 text-[11px] text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-semibold border border-emerald-100">
+                  <i data-lucide="check" class="w-3 h-3"></i> Verified
+                </span>
+              </div>
+
+              <div class="flex items-center gap-1 text-amber-400 text-xs">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <span class="text-slate-400 text-[11px] ml-1.5 font-medium">2 months ago</span>
+              </div>
+
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                "Best homeopathic consultant in Mudiali Bazar area. My 6-year-old child was suffering from recurring chest congestion and frequent nocturnal coughs. Dr. Pal's sweet pills and gentle medicines worked wonders. My child takes the medicines willingly without tears. Highly recommended!"
+              </p>
+            </div>
+
+            <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+              <span class="font-medium text-brand-700">Treated: Pediatric Recurring Cough</span>
+              <span class="text-slate-400">Google Review</span>
+            </div>
+          </div>
+
+          <!-- Review 4: Joint Pain & Sciatica -->
+          <div class="review-card bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm flex flex-col justify-between" data-category="pain">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center text-sm">
+                    PK
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900 text-sm">P. K. Ghosh</h4>
+                    <p class="text-[11px] text-slate-400">Senior Citizen · Garden Reach</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1 text-[11px] text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-semibold border border-emerald-100">
+                  <i data-lucide="check" class="w-3 h-3"></i> Verified
+                </span>
+              </div>
+
+              <div class="flex items-center gap-1 text-amber-400 text-xs">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <span class="text-slate-400 text-[11px] ml-1.5 font-medium">3 months ago</span>
+              </div>
+
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                "Dr. Pal provides genuine medical care without unnecessary over-medication. He guided me on dietary and lifestyle changes along with personalized remedies for my severe joint pain and sciatica. I am now able to walk comfortably without pain killers."
+              </p>
+            </div>
+
+            <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+              <span class="font-medium text-brand-700">Treated: Sciatica & Knee Arthritis</span>
+              <span class="text-slate-400">Google Review</span>
+            </div>
+          </div>
+
+          <!-- Review 5: Patient-First & Weekend Care -->
+          <div class="review-card bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm flex flex-col justify-between" data-category="digestive">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-teal-100 text-teal-800 font-bold flex items-center justify-center text-sm">
+                    AB
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900 text-sm">A. Banik</h4>
+                    <p class="text-[11px] text-slate-400">Patient · Metiabruz / Garden Reach</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1 text-[11px] text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-semibold border border-emerald-100">
+                  <i data-lucide="check" class="w-3 h-3"></i> Verified
+                </span>
+              </div>
+
+              <div class="flex items-center gap-1 text-amber-400 text-xs">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <span class="text-slate-400 text-[11px] ml-1.5 font-medium">4 months ago</span>
+              </div>
+
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                "Very satisfied with the treatment. The doctor explains every aspect of why the issue occurred and how homeopathy will resolve it at the root level. Having weekend 24-hour availability is also a huge relief for emergency situations."
+              </p>
+            </div>
+
+            <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+              <span class="font-medium text-brand-700">Treated: Sluggish Liver & Chronic Fatigue</span>
+              <span class="text-slate-400">Google Review</span>
+            </div>
+          </div>
+
+          <!-- Review 6: Migraine & Lifestyle -->
+          <div class="review-card bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm flex flex-col justify-between" data-category="skin">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-purple-100 text-purple-800 font-bold flex items-center justify-center text-sm">
+                    SS
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900 text-sm">Sunita Shaw</h4>
+                    <p class="text-[11px] text-slate-400">Patient · Kolkata</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1 text-[11px] text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-semibold border border-emerald-100">
+                  <i data-lucide="check" class="w-3 h-3"></i> Verified
+                </span>
+              </div>
+
+              <div class="flex items-center gap-1 text-amber-400 text-xs">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <span class="text-slate-400 text-[11px] ml-1.5 font-medium">5 months ago</span>
+              </div>
+
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                "Consulted Dr. Bibhash Pal for chronic migraine and insomnia that was affecting my work. Within a month of starting his treatment, headache frequency reduced by 90% and sleep quality has improved tremendously. Truly grateful to Dr. Pal!"
+              </p>
+            </div>
+
+            <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+              <span class="font-medium text-brand-700">Treated: Chronic Migraines & Insomnia</span>
+              <span class="text-slate-400">Google Review</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Google Reviews Direct Action Footer -->
+        <div class="mt-10 text-center">
+          <a
+            href="https://maps.app.goo.gl/k1WAh9sfHhrSMPdR6"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-xs font-bold text-brand-700 hover:text-brand-800 bg-brand-50 hover:bg-brand-100 px-5 py-3 rounded-xl border border-brand-200 transition-colors"
+          >
+            <span>View all reviews & photos directly on Google Maps</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. INTERACTIVE APPOINTMENT REQUEST FORM -->
+    <section id="book-appointment" class="py-16 sm:py-20 bg-gradient-to-b from-slate-50 to-brand-50/40 border-b border-slate-200/80">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200/90 relative overflow-hidden" id="appointment-card">
+          <!-- Top Accent Bar -->
+          <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-brand-600 via-emerald-500 to-brand-700"></div>
+
+          <div class="text-center max-w-xl mx-auto space-y-2 mb-8">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Priority Chamber Booking</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 font-serif">
+              Book a Consultation with Dr. Bibhash Pal
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600">
+              Fill out this quick form. Upon submission, it instantly prepares a pre-filled WhatsApp message directly to <strong>+91 96742 86002</strong> for immediate confirmation.
+            </p>
+          </div>
+
+          <!-- Form Element -->
+          <form id="appointment-form" onsubmit="handleAppointmentSubmit(event)" class="space-y-6">
+            <!-- Row 1: Patient Name & Phone -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="patient-name" class="block text-xs font-bold text-slate-700 mb-1.5">
+                  Patient Full Name <span class="text-rose-500">*</span>
+                </label>
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                  </div>
+                  <input
+                    type="text"
+                    id="patient-name"
+                    required
+                    placeholder="e.g. Rahul Sharma"
+                    class="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all text-slate-900"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="patient-phone" class="block text-xs font-bold text-slate-700 mb-1.5">
+                  Contact Number (WhatsApp) <span class="text-rose-500">*</span>
+                </label>
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                    <i data-lucide="phone" class="w-4 h-4"></i>
+                  </div>
+                  <input
+                    type="tel"
+                    id="patient-phone"
+                    required
+                    placeholder="e.g. +91 98765 43210"
+                    class="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all text-slate-900"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 2: Consultation Day & Preferred Slot -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="consultation-slot" class="block text-xs font-bold text-slate-700 mb-1.5">
+                  Preferred Day & Timing <span class="text-rose-500">*</span>
+                </label>
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                    <i data-lucide="calendar" class="w-4 h-4"></i>
+                  </div>
+                  <select
+                    id="consultation-slot"
+                    required
+                    class="w-full pl-9 pr-8 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all text-slate-900"
+                  >
+                    <option value="Today - Afternoon Chamber (1:00 PM – 3:30 PM)">Today - Afternoon Chamber (1:00 PM – 3:30 PM)</option>
+                    <option value="Tomorrow - Afternoon Chamber (1:00 PM – 3:30 PM)">Tomorrow - Afternoon Chamber (1:00 PM – 3:30 PM)</option>
+                    <option value="Monday - Afternoon Chamber (1:00 PM – 3:30 PM)">Monday - Afternoon Chamber (1:00 PM – 3:30 PM)</option>
+                    <option value="Tuesday - Afternoon Chamber (1:00 PM – 3:30 PM)">Tuesday - Afternoon Chamber (1:00 PM – 3:30 PM)</option>
+                    <option value="Wednesday - Afternoon Chamber (1:00 PM – 3:30 PM)">Wednesday - Afternoon Chamber (1:00 PM – 3:30 PM)</option>
+                    <option value="Thursday - Afternoon Chamber (1:00 PM – 3:30 PM)">Thursday - Afternoon Chamber (1:00 PM – 3:30 PM)</option>
+                    <option value="Friday - Afternoon Chamber (1:00 PM – 3:30 PM)">Friday - Afternoon Chamber (1:00 PM – 3:30 PM)</option>
+                    <option value="Saturday - 24 Hours Emergency / Extended">Saturday - 24 Hours Emergency / Extended</option>
+                    <option value="Sunday - 24 Hours Emergency / Extended">Sunday - 24 Hours Emergency / Extended</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="consultation-mode" class="block text-xs font-bold text-slate-700 mb-1.5">
+                  Consultation Mode <span class="text-rose-500">*</span>
+                </label>
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                    <i data-lucide="stethoscope" class="w-4 h-4"></i>
+                  </div>
+                  <select
+                    id="consultation-mode"
+                    required
+                    class="w-full pl-9 pr-8 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all text-slate-900"
+                  >
+                    <option value="Chamber Visit (Mudiali Bazar, Garden Reach)">In-Person Chamber Visit (Mudiali Bazar, Garden Reach)</option>
+                    <option value="Remote Consultation / Telephonic Query">Remote Consultation / Telephonic Query</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 3: Health Concern Specialty -->
+            <div>
+              <label for="health-concern" class="block text-xs font-bold text-slate-700 mb-1.5">
+                Primary Health Concern / Specialty <span class="text-rose-500">*</span>
+              </label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                  <i data-lucide="activity" class="w-4 h-4"></i>
+                </div>
+                <select
+                  id="health-concern"
+                  required
+                  class="w-full pl-9 pr-8 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all text-slate-900"
+                >
+                  <option value="General Health / Chronic Consultation">General Health / Chronic Consultation</option>
+                  <option value="Skin & Hair Conditions (Eczema, Psoriasis, Acne, Hair Fall)">Skin & Hair Conditions (Eczema, Psoriasis, Acne, Hair Fall)</option>
+                  <option value="Respiratory & Allergic Disorders (Asthma, Sinusitis, Bronchitis)">Respiratory & Allergic Disorders (Asthma, Sinusitis, Bronchitis)</option>
+                  <option value="Digestive & Gastrointestinal Issues (Acidity, IBS, Liver)">Digestive & Gastrointestinal Issues (Acidity, IBS, Liver)</option>
+                  <option value="Joint & Musculoskeletal Pain (Arthritis, Sciatica, Spondylitis)">Joint & Musculoskeletal Pain (Arthritis, Sciatica, Spondylitis)</option>
+                  <option value="Lifestyle & Stress Disorders (Insomnia, Migraine, Anxiety)">Lifestyle & Stress Disorders (Insomnia, Migraine, Anxiety)</option>
+                  <option value="Pediatric & Geriatric Care (Child Immunity, Senior Care)">Pediatric & Geriatric Care (Child Immunity, Senior Care)</option>
+                  <option value="Other Specific Health Query">Other Specific Health Query</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Row 4: Brief Symptoms & Notes -->
+            <div>
+              <label for="patient-symptoms" class="block text-xs font-bold text-slate-700 mb-1.5">
+                Brief Description of Symptoms or Duration
+              </label>
+              <textarea
+                id="patient-symptoms"
+                rows="3"
+                placeholder="Mention key symptoms, how long you have had this condition, or existing medications..."
+                class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all text-slate-900"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button with WhatsApp Indicator -->
+            <div class="pt-2">
+              <button
+                type="submit"
+                id="submit-btn"
+                class="w-full inline-flex items-center justify-center gap-2.5 py-4 px-6 text-base font-bold text-white bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 rounded-xl shadow-md hover:shadow-lg transition-all cursor-pointer"
+              >
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                <span>Submit & Send Request via WhatsApp (+91 96742 86002)</span>
+              </button>
+              <p class="text-[11px] text-center text-slate-500 mt-2.5">
+                🔒 Your medical details are kept strictly confidential between you and Dr. Bibhash Pal.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. LOCATION & ACCESSIBILITY SECTION -->
+    <section id="location" class="py-16 sm:py-20 bg-white border-b border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Title -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12 sm:mb-16">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Find Our Chamber</span>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 font-serif">
+            Clinic Location & Getting Here
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            Located conveniently in Mudiali Bazar, Garden Reach, Kolkata. Easily accessible by local transport, auto-rickshaws, and buses.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          <!-- Address & Navigation Card (Left 5 Cols) -->
+          <div class="lg:col-span-5 flex flex-col justify-between bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200">
+            <div class="space-y-6">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-slate-900 text-lg">The Cosmed</h3>
+                  <p class="text-xs text-slate-500 font-medium">Chamber of Dr. Bibhash Pal</p>
+                </div>
+              </div>
+
+              <!-- Full Physical Address -->
+              <div class="space-y-1 text-sm text-slate-700 bg-white p-4 rounded-xl border border-slate-200/80">
+                <p class="font-bold text-slate-900 text-xs uppercase tracking-wider text-brand-700">Chamber Address</p>
+                <p class="font-semibold text-slate-800">Q-364/A/2, MUDIALI BAZAR</p>
+                <p class="text-slate-600">Near Mudiali Bazar, Dewan Bagan Tanti Para Basti</p>
+                <p class="text-slate-600">Garden Reach, Kolkata, West Bengal 700024</p>
+              </div>
+
+              <!-- Landmarks & Commute Guide -->
+              <div class="space-y-3 text-xs text-slate-600">
+                <div class="flex items-start gap-2.5">
+                  <i data-lucide="compass" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <div>
+                    <strong class="text-slate-800 font-semibold block">Key Landmark</strong>
+                    <span>Directly at Mudiali Bazar junction, close to Dewan Bagan Tanti Para Basti in Garden Reach.</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-2.5">
+                  <i data-lucide="bus" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <div>
+                    <strong class="text-slate-800 font-semibold block">Local Transit</strong>
+                    <span>Frequent auto-rickshaw links from Metiabruz, Taratala, and Kidderpore to Mudiali Bazar.</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-2.5">
+                  <i data-lucide="phone-forwarded" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <div>
+                    <strong class="text-slate-800 font-semibold block">Assistance on Arrival</strong>
+                    <span>If you need help locating the chamber building, call <strong>+91 96742 86002</strong> directly.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Get Directions Action Buttons -->
+            <div class="pt-6 mt-6 border-t border-slate-200 space-y-2.5">
+              <a
+                href="https://maps.app.goo.gl/k1WAh9sfHhrSMPdR6"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 text-sm font-bold text-white bg-brand-600 hover:bg-brand-700 rounded-xl shadow-xs transition-colors"
+              >
+                <i data-lucide="navigation" class="w-4 h-4"></i>
+                <span>Get Directions on Google Maps</span>
+              </a>
+
+              <a
+                href="tel:09674286002"
+                class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 text-xs font-semibold text-slate-700 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl transition-colors"
+              >
+                <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-600"></i>
+                <span>Call for Directions: +91 96742 86002</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Embedded Google Map (Right 7 Cols) -->
+          <div class="lg:col-span-7 rounded-2xl overflow-hidden border border-slate-200 shadow-md min-h-[380px] sm:min-h-[460px] relative bg-slate-100">
+            <!-- Map Iframe with accurate Garden Reach / Mudiali Bazar coordinates -->
+            <iframe
+              title="The Cosmed Dr Bibhash Pal Location - Mudiali Bazar Garden Reach Kolkata"
+              src="https://maps.google.com/maps?q=Mudiali+Bazar,+Garden+Reach,+Kolkata+700024&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              class="w-full h-full min-h-[380px] sm:min-h-[460px] border-0"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <!-- Quick Overlay Pill -->
+            <div class="absolute bottom-4 left-4 right-4 sm:right-auto bg-white/95 backdrop-blur-md p-3 rounded-xl border border-slate-200 shadow-md text-xs text-slate-800 flex items-center justify-between gap-3">
+              <div class="flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4 text-brand-600 shrink-0"></i>
+                <span class="font-bold">Mudiali Bazar, Garden Reach 700024</span>
+              </div>
+              <a
+                href="https://maps.app.goo.gl/k1WAh9sfHhrSMPdR6"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-bold text-brand-700 hover:underline shrink-0 text-xs"
+              >
+                Open App →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FREQUENTLY ASKED QUESTIONS (PATIENT FAQs) -->
+    <section id="faq" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200/80">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center space-y-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Patient Guidance</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 font-serif">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-slate-600 text-sm">
+            Helpful information on homeopathic treatment protocols, appointment guidelines, and consultations.
+          </p>
+        </div>
+
+        <div class="space-y-3" id="faq-accordion">
+          <!-- FAQ 1 -->
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+            <button
+              type="button"
+              onclick="toggleFaq(this)"
+              class="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-bold text-slate-900 hover:text-brand-700 transition-colors text-sm sm:text-base cursor-pointer"
+            >
+              <span>What should I bring for my first consultation with Dr. Bibhash Pal?</span>
+              <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 shrink-0 transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-4 sm:px-5 pb-5 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+              Please bring all recent blood tests, medical reports, prescriptions of current allopathic medications, and a brief chronological timeline of your health complaints. First consultations typically involve a detailed case intake taking 20 to 30 minutes.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+            <button
+              type="button"
+              onclick="toggleFaq(this)"
+              class="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-bold text-slate-900 hover:text-brand-700 transition-colors text-sm sm:text-base cursor-pointer"
+            >
+              <span>Can I take homeopathic medicines along with my existing blood pressure or diabetes drugs?</span>
+              <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 shrink-0 transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-4 sm:px-5 pb-5 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+              Yes, homeopathic treatments can safely co-exist with essential chronic medications (such as thyroid, hypertension, or insulin therapy). Dr. Pal advises keeping a 30 to 45-minute interval between medicines. Never stop prescribed life-saving allopathic drugs without physician guidance.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+            <button
+              type="button"
+              onclick="toggleFaq(this)"
+              class="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-bold text-slate-900 hover:text-brand-700 transition-colors text-sm sm:text-base cursor-pointer"
+            >
+              <span>How do weekend 24-hour emergency consultations work?</span>
+              <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 shrink-0 transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-4 sm:px-5 pb-5 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+              On Saturdays and Sundays, The Cosmed provides extended emergency coverage for acute discomforts, acute respiratory attacks, sudden fever, or severe pain. Please place a direct telephone call to <strong>+91 96742 86002</strong> beforehand so the chamber doctor can prepare for your immediate arrival.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+            <button
+              type="button"
+              onclick="toggleFaq(this)"
+              class="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-bold text-slate-900 hover:text-brand-700 transition-colors text-sm sm:text-base cursor-pointer"
+            >
+              <span>How long does it take to see results in chronic skin or respiratory conditions?</span>
+              <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 shrink-0 transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-4 sm:px-5 pb-5 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+              Acute issues often respond within hours to days. For deep-seated chronic conditions like psoriasis, chronic asthma, or longstanding arthritis, patients typically note progressive symptomatic relief within 2 to 4 weeks, with systemic stability consolidating over subsequent months.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FOOTER -->
+    <footer class="bg-slate-900 text-slate-300 pt-16 pb-12 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+          <!-- Col 1: Clinic & Doctor Identity -->
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold">
+                <i data-lucide="cross" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xl font-bold font-serif text-white block">The Cosmed</span>
+                <span class="text-xs text-emerald-400 font-medium">Homeopathic Clinic</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Holistic Healing & Trusted Homeopathic Healthcare under the clinical guidance of <strong>Dr. Bibhash Pal (Homoeopathic Physician & Consultant)</strong> in Garden Reach, Kolkata.
+            </p>
+            <div class="flex items-center gap-3 pt-2">
+              <a
+                href="tel:09674286002"
+                aria-label="Call clinic"
+                class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-brand-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors"
+              >
+                <i data-lucide="phone" class="w-4 h-4"></i>
+              </a>
+              <a
+                href="https://wa.me/919674286002"
+                aria-label="WhatsApp clinic"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors"
+              >
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+              </a>
+              <a
+                href="https://maps.app.goo.gl/k1WAh9sfHhrSMPdR6"
+                aria-label="Clinic map"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-brand-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors"
+              >
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="space-y-3">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white">Quick Navigation</h4>
+            <ul class="space-y-2 text-xs text-slate-400">
+              <li><a href="#home" class="hover:text-emerald-400 transition-colors">Home & Chamber Status</a></li>
+              <li><a href="#about" class="hover:text-emerald-400 transition-colors">About Dr. Bibhash Pal</a></li>
+              <li><a href="#treatments" class="hover:text-emerald-400 transition-colors">Specialties & Conditions</a></li>
+              <li><a href="#timings" class="hover:text-emerald-400 transition-colors">Timings & Emergency Hours</a></li>
+              <li><a href="#location" class="hover:text-emerald-400 transition-colors">Clinic Map & Directions</a></li>
+              <li><a href="#book-appointment" class="hover:text-emerald-400 transition-colors">Book an Appointment</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Chamber Timings Recap -->
+          <div class="space-y-3">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white">Chamber Hours</h4>
+            <div class="text-xs text-slate-400 space-y-2">
+              <div class="bg-slate-800/80 p-2.5 rounded-lg border border-slate-700/60">
+                <span class="font-bold text-white block">Monday – Friday:</span>
+                <span class="text-emerald-400">1:00 PM – 3:30 PM</span>
+                <span class="text-[11px] text-slate-400 block mt-0.5">Regular Afternoon Chamber</span>
+              </div>
+              <div class="bg-slate-800/80 p-2.5 rounded-lg border border-slate-700/60">
+                <span class="font-bold text-white block">Saturday & Sunday:</span>
+                <span class="text-emerald-400">Open 24 Hours</span>
+                <span class="text-[11px] text-slate-400 block mt-0.5">Emergency & Extended Care</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 4: Address & Contact Details -->
+          <div class="space-y-3">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white">Contact & Location</h4>
+            <div class="text-xs text-slate-400 space-y-2">
+              <p class="leading-relaxed">
+                <strong class="text-white block font-medium">The Cosmed</strong>
+                Q-364/A/2, MUDIALI BAZAR,<br />
+                Near Mudiali Bazar, Dewan Bagan Tanti Para Basti,<br />
+                Garden Reach, Kolkata, WB 700024
+              </p>
+              <p class="pt-1">
+                <span class="text-slate-500 block">Phone & WhatsApp:</span>
+                <a href="tel:09674286002" class="text-white font-bold hover:text-emerald-400 transition-colors">
+                  +91 96742 86002
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Medical Disclaimer & Legal -->
+        <div class="pt-8 space-y-4 text-[11px] text-slate-500 text-center sm:text-left">
+          <div class="p-4 rounded-xl bg-slate-800/50 border border-slate-800 text-slate-400 leading-relaxed">
+            <strong class="text-slate-300 block mb-1">Medical Disclaimer:</strong>
+            The information provided on this website is for general educational and chamber appointment scheduling purposes only. Homeopathic remedy selection is strictly individualized based on comprehensive constitutional case intake. For sudden life-threatening crises, severe trauma, or acute medical emergencies, please immediately visit the emergency department of the nearest hospital.
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-2 pt-2 text-slate-500">
+            <p>© <span id="current-year">2026</span> The Cosmed · Dr. Bibhash Pal. All Rights Reserved.</p>
+            <p>Garden Reach, Kolkata, West Bengal 700024</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 11. MOBILE-FIRST STICKY ACTION BAR (VISIBLE ON MOBILE ONLY) -->
+    <div
+      class="fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-2.5 flex items-center gap-3 md:hidden shadow-[0_-4px_12px_rgba(0,0,0,0.06)]"
+      aria-label="Mobile quick actions"
+    >
+      <a
+        href="tel:09674286002"
+        class="flex-1 inline-flex items-center justify-center gap-2 py-3 px-3 rounded-xl font-bold text-xs text-slate-800 bg-slate-100 hover:bg-slate-200 active:bg-slate-300 transition-colors border border-slate-200"
+      >
+        <i data-lucide="phone-call" class="w-4 h-4 text-brand-600"></i>
+        <span>Direct Call</span>
+      </a>
+
+      <a
+        href="https://wa.me/919674286002?text=Hello%20Dr.%20Bibhash%20Pal,%20I%20would%20like%20to%20book%20an%20appointment%20at%20The%20Cosmed."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex-1 inline-flex items-center justify-center gap-2 py-3 px-3 rounded-xl font-bold text-xs text-white bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 transition-colors shadow-sm"
+      >
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span>WhatsApp Book</span>
+      </a>
+    </div>
+
+    <!-- 12. APPOINTMENT CONFIRMATION MODAL -->
+    <div
+      id="confirmation-modal"
+      class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 space-y-4 animate-in fade-in zoom-in duration-200">
+        <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">
+          <i data-lucide="check-circle" class="w-6 h-6"></i>
+        </div>
+
+        <div class="text-center space-y-1">
+          <h3 id="modal-title" class="text-lg font-bold text-slate-900">Appointment Request Ready!</h3>
+          <p class="text-xs text-slate-500">
+            We are opening WhatsApp to send your request directly to Dr. Bibhash Pal (+91 96742 86002).
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-1.5 font-mono" id="modal-preview-text">
+          <!-- Populated by JavaScript -->
+        </div>
+
+        <div class="space-y-2 pt-2">
+          <a
+            id="modal-whatsapp-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl transition-colors"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Continue to WhatsApp</span>
+          </a>
+
+          <button
+            type="button"
+            onclick="copyRequestDetails()"
+            class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition-colors cursor-pointer"
+          >
+            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+            <span id="copy-btn-text">Copy Request Details</span>
+          </button>
+
+          <button
+            type="button"
+            onclick="closeModal()"
+            class="w-full py-2 text-xs font-medium text-slate-400 hover:text-slate-600 transition-colors"
+          >
+            Close Window
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13. VANILLA JAVASCRIPT FOR DYNAMIC FUNCTIONALITY -->
+    <script>
+      // Initialize Lucide Icons immediately
+      function renderIcons() {
+        if (window.lucide) {
+          window.lucide.createIcons();
+        }
+      }
+      document.addEventListener('DOMContentLoaded', renderIcons);
+
+      // Current Year in Footer
+      const yearEl = document.getElementById('current-year');
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+
+      // Mobile Navigation Menu Toggle
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileNav = document.getElementById('mobile-nav');
+      const iconOpen = document.getElementById('menu-icon-open');
+      const iconClose = document.getElementById('menu-icon-close');
+
+      if (mobileMenuToggle && mobileNav) {
+        mobileMenuToggle.addEventListener('click', () => {
+          const isClosed = mobileNav.classList.contains('hidden');
+          if (isClosed) {
+            mobileNav.classList.remove('hidden');
+            iconOpen.classList.add('hidden');
+            iconClose.classList.remove('hidden');
+          } else {
+            mobileNav.classList.add('hidden');
+            iconOpen.classList.remove('hidden');
+            iconClose.classList.add('hidden');
+          }
+        });
+
+        // Close mobile drawer on navigation click
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileNav.classList.add('hidden');
+            iconOpen.classList.remove('hidden');
+            iconClose.classList.add('hidden');
+          });
+        });
+      }
+
+      // Dynamic Chamber Status Logic (Mon-Fri 1:00 PM - 3:30 PM, Sat-Sun 24 Hours)
+      function updateChamberStatus() {
+        const now = new Date();
+        const day = now.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+        const currentTimeInMinutes = hour * 60 + minute;
+
+        // Chamber regular timings: 1:00 PM (13:00) to 3:30 PM (15:30)
+        const openTimeInMinutes = 13 * 60; // 780
+        const closeTimeInMinutes = 15 * 60 + 30; // 930
+
+        const topStatusIndicator = document.getElementById('top-status-indicator');
+        const topStatusText = document.getElementById('top-status-text');
+        const topStatusDot = document.getElementById('top-status-dot');
+        const heroStatusText = document.getElementById('hero-status-text');
+        const heroStatusDot = document.getElementById('hero-status-dot');
+        const scheduleDayTitle = document.getElementById('schedule-day-title');
+        const scheduleStatusPill = document.getElementById('schedule-status-pill');
+        const scheduleDetailText = document.getElementById('schedule-detail-text');
+
+        const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const currentDayName = dayNames[day];
+
+        // Highlight today's schedule row
+        const rowIds = ['row-sun', 'row-mon', 'row-tue', 'row-wed', 'row-thu', 'row-fri', 'row-sat'];
+        rowIds.forEach((id, idx) => {
+          const row = document.getElementById(id);
+          if (row) {
+            if (idx === day) {
+              row.classList.add('ring-2', 'ring-brand-500', 'bg-brand-50/50');
+            } else {
+              row.classList.remove('ring-2', 'ring-brand-500', 'bg-brand-50/50');
+            }
+          }
+        });
+
+        if (day === 0 || day === 6) {
+          // Weekend: Open 24 hours
+          if (topStatusText) topStatusText.textContent = `Open 24 Hours Today (${currentDayName} Emergency Support)`;
+          if (heroStatusText) heroStatusText.textContent = `Open 24h Today · ${currentDayName} Emergency Service`;
+          if (scheduleDayTitle) scheduleDayTitle.textContent = `${currentDayName} (Weekend)`;
+          if (scheduleStatusPill) {
+            scheduleStatusPill.textContent = 'Open 24 Hours';
+            scheduleStatusPill.className = 'text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800';
+          }
+          if (scheduleDetailText) {
+            scheduleDetailText.textContent = 'Weekend 24-hour service active for acute and emergency queries. Direct call: +91 96742 86002.';
+          }
+        } else {
+          // Weekday: Mon - Fri
+          if (currentTimeInMinutes >= openTimeInMinutes && currentTimeInMinutes <= closeTimeInMinutes) {
+            // Chamber currently in session
+            const minutesLeft = closeTimeInMinutes - currentTimeInMinutes;
+            const statusMsg = `Open Now · Chamber in Session (Closes at 3:30 PM, ${minutesLeft}m left)`;
+            if (topStatusText) topStatusText.textContent = statusMsg;
+            if (heroStatusText) heroStatusText.textContent = `Chamber Open Now · Closes 3:30 PM`;
+            if (scheduleDayTitle) scheduleDayTitle.textContent = `${currentDayName} Afternoon Session`;
+            if (scheduleStatusPill) {
+              scheduleStatusPill.textContent = 'In Session Now';
+              scheduleStatusPill.className = 'text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800';
+            }
+            if (scheduleDetailText) {
+              scheduleDetailText.textContent = 'Dr. Bibhash Pal is currently seeing patients at Mudiali Bazar chamber.';
+            }
+          } else if (currentTimeInMinutes < openTimeInMinutes) {
+            // Opening later today
+            const statusMsg = `Opening Today at 1:00 PM (${currentDayName}: 1:00 PM – 3:30 PM)`;
+            if (topStatusText) topStatusText.textContent = statusMsg;
+            if (heroStatusText) heroStatusText.textContent = `Opening Today at 1:00 PM`;
+            if (scheduleDayTitle) scheduleDayTitle.textContent = `${currentDayName} Schedule`;
+            if (scheduleStatusPill) {
+              scheduleStatusPill.textContent = 'Opens at 1:00 PM';
+              scheduleStatusPill.className = 'text-xs font-semibold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800';
+            }
+            if (scheduleDetailText) {
+              scheduleDetailText.textContent = 'Chamber opens at 1:00 PM sharp. You can book an appointment slot in advance.';
+            }
+          } else {
+            // Chamber closed for the day
+            const nextDayName = day === 5 ? 'Saturday (24h Emergency Service)' : `${dayNames[day + 1]} at 1:00 PM`;
+            const statusMsg = `Chamber Closed for Today · Next Session: ${nextDayName}`;
+            if (topStatusText) topStatusText.textContent = statusMsg;
+            if (heroStatusText) heroStatusText.textContent = `Next Session: ${nextDayName}`;
+            if (topStatusDot) topStatusDot.classList.replace('bg-emerald-400', 'bg-amber-400');
+            if (heroStatusDot) heroStatusDot.classList.replace('bg-emerald-500', 'bg-amber-500');
+            if (scheduleDayTitle) scheduleDayTitle.textContent = `${currentDayName} Chamber Finished`;
+            if (scheduleStatusPill) {
+              scheduleStatusPill.textContent = 'Closed for Today';
+              scheduleStatusPill.className = 'text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-200 text-slate-700';
+            }
+            if (scheduleDetailText) {
+              scheduleDetailText.textContent = `Today's 1:00 PM – 3:30 PM session has ended. Next consultation available: ${nextDayName}.`;
+            }
+          }
+        }
+      }
+
+      updateChamberStatus();
+      setInterval(updateChamberStatus, 60000); // Check every minute
+
+      // "Inquire for this Treatment" Quick Action Handler
+      function selectTreatment(conditionName) {
+        const selectEl = document.getElementById('health-concern');
+        const appointmentCard = document.getElementById('appointment-card');
+        const symptomsEl = document.getElementById('patient-symptoms');
+
+        if (selectEl) {
+          selectEl.value = conditionName;
+          if (!selectEl.value) {
+            // Add custom option if not perfectly matched
+            const newOpt = new Option(conditionName, conditionName, true, true);
+            selectEl.add(newOpt);
+          }
+        }
+
+        if (symptomsEl && !symptomsEl.value) {
+          symptomsEl.placeholder = `Tell Dr. Pal about your ${conditionName} symptoms and duration...`;
+        }
+
+        // Smooth scroll to form
+        const targetSection = document.getElementById('book-appointment');
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Highlight form card
+        if (appointmentCard) {
+          appointmentCard.classList.add('ring-4', 'ring-brand-400/50');
+          setTimeout(() => {
+            appointmentCard.classList.remove('ring-4', 'ring-brand-400/50');
+          }, 1500);
+        }
+
+        // Focus patient name
+        setTimeout(() => {
+          const nameInput = document.getElementById('patient-name');
+          if (nameInput) nameInput.focus();
+        }, 500);
+      }
+
+      // Appointment Form Handler & WhatsApp Pre-fill Generator
+      let lastGeneratedMessage = '';
+
+      function handleAppointmentSubmit(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('patient-name').value.trim();
+        const phone = document.getElementById('patient-phone').value.trim();
+        const slot = document.getElementById('consultation-slot').value;
+        const mode = document.getElementById('consultation-mode').value;
+        const concern = document.getElementById('health-concern').value;
+        const symptoms = document.getElementById('patient-symptoms').value.trim() || 'Not specified';
+
+        if (!name || !phone) {
+          alert('Please provide your name and contact phone number.');
+          return;
+        }
+
+        // Clean structured WhatsApp message
+        const messageText = 
+`*Appointment Request - The Cosmed*
+Hello Dr. Bibhash Pal, I would like to book a consultation at your chamber:
+
+• *Patient Name:* ${name}
+• *Phone:* ${phone}
+• *Preferred Slot:* ${slot}
+• *Consultation Mode:* ${mode}
+• *Health Concern:* ${concern}
+• *Brief Symptoms:* ${symptoms}
+
+Please confirm availability and chamber token. Thank you!`;
+
+        lastGeneratedMessage = messageText;
+
+        const encodedMessage = encodeURIComponent(messageText);
+        const whatsappUrl = `https://wa.me/919674286002?text=${encodedMessage}`;
+
+        // Update Modal Content
+        const modal = document.getElementById('confirmation-modal');
+        const previewEl = document.getElementById('modal-preview-text');
+        const modalLink = document.getElementById('modal-whatsapp-link');
+
+        if (previewEl) {
+          previewEl.innerHTML = `
+            <div><strong>Patient:</strong> ${escapeHtml(name)} (${escapeHtml(phone)})</div>
+            <div><strong>Slot:</strong> ${escapeHtml(slot)}</div>
+            <div><strong>Mode:</strong> ${escapeHtml(mode)}</div>
+            <div><strong>Concern:</strong> ${escapeHtml(concern)}</div>
+            <div><strong>Symptoms:</strong> ${escapeHtml(symptoms)}</div>
+          `;
+        }
+
+        if (modalLink) {
+          modalLink.href = whatsappUrl;
+        }
+
+        if (modal) {
+          modal.classList.remove('hidden');
+          renderIcons();
+        }
+
+        // Also trigger window open after brief delay or user click
+        window.open(whatsappUrl, '_blank');
+      }
+
+      function closeModal() {
+        const modal = document.getElementById('confirmation-modal');
+        if (modal) modal.classList.add('hidden');
+      }
+
+      function copyRequestDetails() {
+        if (!lastGeneratedMessage) return;
+        navigator.clipboard.writeText(lastGeneratedMessage).then(() => {
+          const btnText = document.getElementById('copy-btn-text');
+          if (btnText) {
+            btnText.textContent = 'Copied to Clipboard!';
+            setTimeout(() => {
+              btnText.textContent = 'Copy Request Details';
+            }, 2000);
+          }
+        }).catch(err => {
+          console.error('Failed to copy', err);
+        });
+      }
+
+      function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      // FAQ Accordion Toggle
+      function toggleFaq(button) {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('[data-lucide="chevron-down"]');
+        const isHidden = content.classList.contains('hidden');
+
+        // Close all other FAQs
+        document.querySelectorAll('.faq-content').forEach(c => {
+          c.classList.add('hidden');
+        });
+        document.querySelectorAll('#faq-accordion button [data-lucide="chevron-down"]').forEach(i => {
+          i.classList.remove('rotate-180');
+        });
+
+        if (isHidden) {
+          content.classList.remove('hidden');
+          if (icon) icon.classList.add('rotate-180');
+        }
+      }
+
+      // Reviews Category Filter
+      function filterReviews(category, button) {
+        document.querySelectorAll('.review-filter-btn').forEach(btn => {
+          btn.className = 'review-filter-btn px-4 py-2 rounded-lg bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-colors cursor-pointer';
+        });
+        if (button) {
+          button.className = 'review-filter-btn px-4 py-2 rounded-lg bg-brand-600 text-white font-semibold transition-colors cursor-pointer';
+        }
+
+        const cards = document.querySelectorAll('.review-card');
+        cards.forEach(card => {
+          const cardCategory = card.getAttribute('data-category');
+          if (category === 'all' || cardCategory === category) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+        renderIcons();
+      }
+    </script>
+  </body>
+</html>
